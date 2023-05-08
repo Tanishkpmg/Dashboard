@@ -1,0 +1,49 @@
+<%- include('header') %> <%- include('navbar') %>
+<div class="heading">
+  <h1 class="headingelements">Upload your KPI'S</h1>
+</div>
+<form action="/kpi" method="post" enctype="multipart/form-data">
+  <div class="excelsheets1">
+    <h3 class="text-center">Credits</h3>
+    <div class="creditsanddebits">
+      <div class="mb-3 excelfiles">
+        <img src="excellogo.jpg" class="image1" alt="excel logo" />
+        <input type="file" name="excelsheet4" class="Inputform" />
+      </div>
+      <div class="mb-3 excelfiles">
+        <img src="excellogo.jpg" class="image1" alt="excel logo" />
+        <input type="file" name="excelsheet5" class="Inputform" />
+      </div>
+      <div class="mb-3 excelfiles">
+        <img src="excellogo.jpg" class="image1" alt="excel logo" />
+        <input type="file" name="excelsheet6" class="Inputform" />
+      </div>
+      <div class="mb-3 excelfiles">
+        <img src="excellogo.jpg" class="image1" alt="excel logo" />
+        <input type="file" name="excelsheet7" class="Inputform" />
+      </div>
+      <div class="mb-3 excelfiles">
+        <img src="excellogo.jpg" class="image1" alt="excel logo" />
+        <input type="file" name="excelsheet8" class="Inputform" />
+      </div>
+    </div>
+    <h3 class="text-center">Debits</h3>
+    <div class="creditsanddebits">
+      <div class="mb-3 excelfiles">
+        <img src="excellogo.jpg" class="image1" alt="excel logo" />
+        <input type="file" name="excelsheet9" class="Inputform" />
+      </div>
+      <div class="mb-3 excelfiles">
+        <img src="excellogo.jpg" class="image1" alt="excel logo" />
+        <input type="file" name="excelsheet10" class="Inputform" />
+      </div>
+      <div class="mb-3 excelfiles">
+        <img src="excellogo.jpg" class="image1" alt="excel logo" />
+        <input type="file" name="excelsheet11" class="Inputform" />
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary absolute2">Analyse</button>
+</form>
+
+<%- include('footer') %>

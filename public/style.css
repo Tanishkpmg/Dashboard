@@ -1,0 +1,89 @@
+.excelsheets {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.excelsheets1 {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-top: 30px;
+}
+
+.excelfile {
+    margin: 60px;
+}
+
+.absolute {
+    position: absolute;
+    left: 43vw;
+    top: 85vh;
+}
+.absolute2 {
+    position: absolute;
+    left: 83vw;
+    top: 85vh;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.headingelements {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+#btnkpi {
+    position: absolute;
+    left: 88vw;
+    top: 49vh;
+}
+
+.image {
+    height: 100px;
+}
+.image1 {
+    height: 60px;
+}
+
+#discrepancyfound {
+    position: absolute;
+    left: 65vw;
+    top: 45vh;
+}
+
+.cardname {
+    margin-top: 20px;
+    margin-left: 20vw;
+}
+
+.creditsanddebits{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    /* height: 54vh; */
+    /* width: 50%; */
+    flex-wrap: wrap;
+    /*margin-top: 20vh; */
+}
+
+.text-center{
+    text-align: center;
+}
+.Inputform{
+    width: 10vw;
+    height: 10vh;
+}
+.excelsheets1 h3{
+    margin: 10px;
+}

@@ -1,0 +1,56 @@
+<%- include('header') %>
+    <%- include('navbar') %>
+
+        <div class="card cardname" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Total Credit</h5>
+                <p class="card-text">
+                    <%= totalcredit %>
+                </p>
+            </div>
+        </div>
+        <div class="card cardname" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Total Debit</h5>
+                <p class="card-text">
+                    <%= totaldebit %>
+                </p>
+            </div>
+        </div>
+        <div class="card cardname" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Opening Balance</h5>
+                <p class="card-text">
+                    <%= openingbalance %>
+                </p>
+            </div>
+        </div>
+        <div class="card cardname" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Total Value in both banks</h5>
+                <p class="card-text">
+                    <%= totalvalueinbothbanks %>
+                </p>
+            </div>
+        </div>
+        <div class="card cardname" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Wallet Balance</h5>
+                <p class="card-text">
+                    <%= walletbalance %>
+                </p>
+            </div>
+        </div>
+        <div class="card" id="discrepancyfound" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Discrepancy Found</h5>
+                <p class="card-text">
+                    <%= discrepancyfound %>
+                </p>
+            </div>
+        </div>
+        <form action="/newform" method="post">
+            <input type="hidden" name="discrepancyfound" value="<%= discrepancyfound %>">
+            <button class="btn btn-success " id="btnkpi">Kpi</button>
+        </form>
+        <%- include('footer') %>
