@@ -1,0 +1,85 @@
+.bgBlue {
+    background-color: #005EB8;
+
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.grey {
+    background-color: rgb(170, 170, 170);
+}
+
+.openingandclosingbalance {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.creditanddebit {
+    display: flex;
+    /* flex-direction: ; */
+    justify-content: space-around;
+}
+
+
+.bal {
+    background-color: #171868;
+    height: 2rem;
+    font-size: large;
+    width: 15vw;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.amount {
+    width: 7vw;
+    text-align: center;
+    background-color: rgb(170, 170, 170);
+    border-radius: 5px;
+}
+
+.ocbal {
+    width: 30vw;
+    height: 2rem;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+}
+
+.balancemovementatbank {
+    margin-top: -8px;
+    height: 2rem;
+    color: white;
+    font-size: large;
+}
+
+.boxcd {
+    width: 30vw;
+    height: 2rem;
+    font-size: large;
+    border-radius: 5px;
+    color: white;
+}
+
+.value {
+    margin-top: 3px;
+    border-radius: 3px;
+    height: 20vh;
+    overflow: scroll;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-10 {
+    margin-top: 20px;
+}
+
+/* .absolute {
+    position: absolute;
+    bottom: 0;
+} */

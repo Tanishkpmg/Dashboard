@@ -1,4 +1,4 @@
-<%- include('header') %>
+<!-- <%- include('header') %>
     <%- include('navbar') %>
 
         <div class="card cardname" style="width: 18rem;">
@@ -53,4 +53,151 @@
             <input type="hidden" name="discrepancyfound" value="<%= discrepancyfound %>">
             <button class="btn btn-success " id="btnkpi">Kpi</button>
         </form>
-        <%- include('footer') %>
+        <%- include('footer') %> -->
+<%- include('header') %>
+    <!-- <%- include('navbar') %> -->
+    <div>
+        <h1 class="headingescrow text-align-center grey">ESCROW Account Reconciliation</h1>
+        <div class="bank1">
+            <div class="box text-align-center balancemovementatbank bgBlue">Balance Movement At Bank</div>
+            <div class="openingandclosingbalance mx-2">
+                <div class="ocbal my-1">
+                    <div class="bal">Opening Balance</div>
+                    <div class="amount">23bn</div>
+                    <!-- <div class="amount"><%= openingbalance %></div> -->
+                </div>
+                <div class="ocbal my-1">
+                    <div class="bal">Closing Balance</div>
+                    <div class="amount">23bn</div>
+                    <!-- <div class="amount">23bn</div> -->
+                </div>
+            </div>
+            <div class="creditanddebit my-2">
+                <div class="creditbox">
+                    <div class="boxcd text-align-center bgBlue">Credits</div>
+                    <div class="value">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Particulars</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Deposit for E-value</td>
+                                    <td>2397.87 mn</td>
+                                </tr>
+                                <tr>
+                                    <td>Other deposit value</td>
+                                    <td>0.00 mn</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="debitbox">
+                    <div class="boxcd text-align-center bgBlue">Debits</div>
+                    <div class="value height">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Particulars</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Deposit for E-value</td>
+                                    <td>2397.87 mn</td>
+                                </tr>
+                                <tr>
+                                    <td>Other deposit value</td>
+                                    <td>0.00 mn</td>
+                                </tr>
+                                <tr>
+                                    <td>Deposit for E-value</td>
+                                    <td>2397.87 mn</td>
+                                </tr>
+                                <tr>
+                                    <td>Other deposit value</td>
+                                    <td>0.00 mn</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box text-align-center balancemovementatbank margin-top-10 bgBlue">Balance Movement At Bank</div>
+    <div class="openingandclosingbalance mx-2">
+        <div class="ocbal my-1">
+            <div class="bal">Opening Balance</div>
+            <div class="amount">23bn</div>
+            <!-- <div class="amount"><%= openingbalance %></div> -->
+        </div>
+        <div class="ocbal my-1">
+            <div class="bal">Closing Balance</div>
+            <div class="amount">23bn</div>
+            <!-- <div class="amount">23bn</div> -->
+        </div>
+    </div>
+    <div class="creditanddebit my-2">
+        <div class="creditbox">
+            <div class="boxcd text-align-center bgBlue">Credits</div>
+            <div class="value">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Particulars</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Deposit for E-value</td>
+                            <td>2397.87 mn</td>
+                        </tr>
+                        <tr>
+                            <td>Other deposit value</td>
+                            <td>0.00 mn</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="debitbox">
+            <div class="boxcd text-align-center bgBlue">Debits</div>
+            <div class="value height">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Particulars</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Deposit for E-value</td>
+                            <td>2397.87 mn</td>
+                        </tr>
+                        <tr>
+                            <td>Other deposit value</td>
+                            <td>0.00 mn</td>
+                        </tr>
+                        <tr>
+                            <td>Deposit for E-value</td>
+                            <td>2397.87 mn</td>
+                        </tr>
+                        <tr>
+                            <td>Other deposit value</td>
+                            <td>0.00 mn</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="box text-align-center balancemovementatbank my-4 bgBlue">End of day balance</div>
+    <!-- <%- include('footer') %> -->
