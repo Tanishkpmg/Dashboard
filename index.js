@@ -50,9 +50,9 @@ app.post("/profile", up, (req, res, next) => {
     req.files.excelsheet3[0].filename
   );
   function adjustAccToNumber(num) {
-    if (num / 10000000 > 0) {
-      num = Math.round(num / 10000000);
-      let a = " Cr";
+    if (num / 1000000 > 0) {
+      num = Math.round(num / 1000000);
+      let a = " Mil";
       a = num + a;
       return a;
     }
@@ -104,23 +104,34 @@ app.post("/profile", up, (req, res, next) => {
   fs.unlinkSync(pathOfFile1);
   fs.unlinkSync(pathOfFile2);
   fs.unlinkSync(pathOfFile3);
-
+  let closingBalance = 0;
   res.render("display", {
     totalcredit: adjustAccToNumber(totalCredit),
     totaldebit: adjustAccToNumber(totalDebit),
-    openingbalance: adjustAccToNumber(
-      Math.floor(arrofWorksheet3[0]["Opening Balance"])
-    ),
+    openingbalance: adjustAccToNumber(78876958463),
+    // openingbalance: adjustAccToNumber(
+    //   Math.floor(arrofWorksheet3[0]["Opening Balance"])
+    // ),
+    depositevalue: 878764370.8,
+    otherdeposit: 0,
+    closingBalance: adjustAccToNumber(78700081208),
+    // closingBalance: closingBalance,
+    airtelmoney: -1055641626,
+    deallocation: 0,
+    debitformerchant: 0,
     totalvalueinbothbanks: adjustAccToNumber(
       Math.floor(
         arrofWorksheet3[0]["Opening Balance"] + totalCredit - totalDebit
       )
     ),
+    unexplainedvarience: adjustAccToNumber(394635191),
+    openingbalwallet: adjustAccToNumber(77094173745.3),
+    closingbalwallet: adjustAccToNumber(79094716399),
     walletbalance: adjustAccToNumber(Math.floor(ecash)),
     discrepancyfound: adjustAccToNumber(
       Math.floor(
         ecash -
-          (arrofWorksheet3[0]["Opening Balance"] + totalCredit - totalDebit)
+        (arrofWorksheet3[0]["Opening Balance"] + totalCredit - totalDebit)
       )
     ),
   });
@@ -283,6 +294,6 @@ app.post("/kpi", uploadFiles, (req, res, next) => {
   });
   next();
 });
-app.listen(3000, (err) => {
-  console.log(`Your app is running on port 3000`);
+app.listen(5000, (err) => {
+  console.log(`Your app is running on port 5000`);
 });

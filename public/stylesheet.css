@@ -41,6 +41,21 @@
     border-radius: 5px;
 }
 
+.amount1 {
+    width: 20vw;
+    text-align: center;
+    background-color: #171868;
+    color: white;
+    border-radius: 5px;
+}
+
+.amount2 {
+    width: 60vw;
+    text-align: center;
+    background-color: rgb(170, 170, 170);
+    border-radius: 5px;
+}
+
 .ocbal {
     width: 30vw;
     height: 2rem;
@@ -64,6 +79,10 @@
     color: white;
 }
 
+.newid {
+    width: 43vw;
+}
+
 .value {
     margin-top: 3px;
     border-radius: 3px;
@@ -75,11 +94,27 @@
     margin-top: 10px;
 }
 
+#span {
+    color: white;
+}
+
 .margin-top-10 {
     margin-top: 20px;
 }
 
-/* .absolute {
+.unexplainedvarience {
     position: absolute;
-    bottom: 0;
+    left: 42vw;
+    height: 25px;
+    bottom: 13px;
+    /* margin-bottom: 15px; */
+}
+
+/* #bg {
+    background-image: url("bg.png");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 } */

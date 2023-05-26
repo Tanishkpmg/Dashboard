@@ -54,150 +54,196 @@
             <button class="btn btn-success " id="btnkpi">Kpi</button>
         </form>
         <%- include('footer') %> -->
+<!-- <%- include('navbar') %> -->
 <%- include('header') %>
-    <!-- <%- include('navbar') %> -->
-    <div>
-        <h1 class="headingescrow text-align-center grey">ESCROW Account Reconciliation</h1>
-        <div class="bank1">
-            <div class="box text-align-center balancemovementatbank bgBlue">Balance Movement At Bank</div>
-            <div class="openingandclosingbalance mx-2">
-                <div class="ocbal my-1">
-                    <div class="bal">Opening Balance</div>
-                    <div class="amount">23bn</div>
-                    <!-- <div class="amount"><%= openingbalance %></div> -->
-                </div>
-                <div class="ocbal my-1">
-                    <div class="bal">Closing Balance</div>
-                    <div class="amount">23bn</div>
-                    <!-- <div class="amount">23bn</div> -->
-                </div>
-            </div>
-            <div class="creditanddebit my-2">
-                <div class="creditbox">
-                    <div class="boxcd text-align-center bgBlue">Credits</div>
-                    <div class="value">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Particulars</th>
-                                    <th>Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Deposit for E-value</td>
-                                    <td>2397.87 mn</td>
-                                </tr>
-                                <tr>
-                                    <td>Other deposit value</td>
-                                    <td>0.00 mn</td>
-                                </tr>
-                            </tbody>
-                        </table>
+    <div id="bg">
+        <div>
+            <h1 class="headingescrow text-align-center grey">ESCROW Account Reconciliation</h1>
+            <div class="bank1">
+                <div class="box text-align-center balancemovementatbank bgBlue">Balance Movement At Bank</div>
+                <div class="openingandclosingbalance mx-2">
+                    <div class="ocbal my-1">
+                        <div class="bal">Opening Balance</div>
+                        <!-- <div class="amount">23bn</div> -->
+                        <div class="amount">
+                            <%= openingbalance %>
+                        </div>
+                    </div>
+                    <div class="ocbal my-1">
+                        <div class="bal">Closing Balance</div>
+                        <!-- <div class="amount">23bn</div> -->
+                        <div class="amount">
+                            <%= closingBalance %>
+                        </div>
                     </div>
                 </div>
-                <div class="debitbox">
-                    <div class="boxcd text-align-center bgBlue">Debits</div>
-                    <div class="value height">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Particulars</th>
-                                    <th>Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Deposit for E-value</td>
-                                    <td>2397.87 mn</td>
-                                </tr>
-                                <tr>
-                                    <td>Other deposit value</td>
-                                    <td>0.00 mn</td>
-                                </tr>
-                                <tr>
-                                    <td>Deposit for E-value</td>
-                                    <td>2397.87 mn</td>
-                                </tr>
-                                <tr>
-                                    <td>Other deposit value</td>
-                                    <td>0.00 mn</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="creditanddebit my-2">
+                    <div class="creditbox">
+                        <div class="boxcd text-align-center bgBlue">Credits</div>
+                        <div class="value">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Particulars</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Deposit for E-value</td>
+                                        <td>
+                                            <%= depositevalue %>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other deposit value</td>
+                                        <td>
+                                            <%= otherdeposit %>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="debitbox">
+                        <div class="boxcd text-align-center bgBlue newid">Debits</div>
+                        <div class="value height">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Particulars</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Airtel Money to Bank- Individual/Agent/De-allocation</td>
+                                        <td>
+                                            <%= airtelmoney %>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deallocation on Merchant or Agent/Reversal in Bank -NMB Bank</td>
+                                        <td>
+                                            <%= deallocation %>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Debit for Merchant Payment/AM to Bank</td>
+                                        <td>
+                                            <%= debitformerchant %>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="box text-align-center balancemovementatbank margin-top-10 bgBlue">Balance Movement At Bank</div>
-    <div class="openingandclosingbalance mx-2">
-        <div class="ocbal my-1">
-            <div class="bal">Opening Balance</div>
-            <div class="amount">23bn</div>
-            <!-- <div class="amount"><%= openingbalance %></div> -->
-        </div>
-        <div class="ocbal my-1">
-            <div class="bal">Closing Balance</div>
-            <div class="amount">23bn</div>
-            <!-- <div class="amount">23bn</div> -->
-        </div>
-    </div>
-    <div class="creditanddebit my-2">
-        <div class="creditbox">
-            <div class="boxcd text-align-center bgBlue">Credits</div>
-            <div class="value">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Particulars</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Deposit for E-value</td>
-                            <td>2397.87 mn</td>
-                        </tr>
-                        <tr>
-                            <td>Other deposit value</td>
-                            <td>0.00 mn</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="box text-align-center balancemovementatbank margin-top-10 bgBlue">Airtel Money platform</div>
+        <div class="openingandclosingbalance mx-2">
+            <div class="ocbal my-1">
+                <div class="bal">Opening Balance</div>
+                <div class="amount">
+                    <%= openingbalwallet %>
+                </div>
+                <!-- <div class="amount"><%= openingbalance %></div> -->
+            </div>
+            <div class="ocbal my-1">
+                <div class="bal">Closing Balance</div>
+                <div class="amount">
+                    <%= closingbalwallet %>
+                </div>
+                <!-- <div class="amount">23bn</div> -->
             </div>
         </div>
-        <div class="debitbox">
-            <div class="boxcd text-align-center bgBlue">Debits</div>
-            <div class="value height">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Particulars</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Deposit for E-value</td>
-                            <td>2397.87 mn</td>
-                        </tr>
-                        <tr>
-                            <td>Other deposit value</td>
-                            <td>0.00 mn</td>
-                        </tr>
-                        <tr>
-                            <td>Deposit for E-value</td>
-                            <td>2397.87 mn</td>
-                        </tr>
-                        <tr>
-                            <td>Other deposit value</td>
-                            <td>0.00 mn</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="creditanddebit my-2">
+            <div class="creditbox">
+                <div class="boxcd text-align-center bgBlue newid">Credits</div>
+                <div class="value">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Particulars</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>E-Value Credit against Bank Credit (Bank to Airtel Money)</td>
+                                <td>
+                                    1297050192.8</td>
+                            </tr>
+                            <tr>
+                                <td>E-Value Credit against Bank Credit (Manual Allocation)</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Stock created and transfer IND01</td>
+                                <td>
+                                    1763634088</td>
+                            </tr>
+                            <tr>
+                                <td>Reversal of Suspended transaction</td>
+                                <td>
+                                    0</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Collected Airtime for the previous day</td>
+                                <td>
+                                    0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="debitbox">
+                <div class="boxcd text-align-center bgBlue ">Debits</div>
+                <div class="value height">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Particulars</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Airtel Money to Bank</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Merchant Sweep</td>
+                                <td>-1055641627.035</td>
+                            </tr>
+                            <tr>
+                                <td>Migrated Subcribers to Mobiquity</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>De-Allocation/Stock Withdraw</td>
+                                <td>
+                                    -4500000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Recovery</td>
+                                <td>
+                                    0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
+        <div class="box text-align-center balancemovementatbank my-4 bgBlue">End of day balance</div>
+        <div class="unexplainedvarience amount1">Unexplained varience: <span id="span">
+                <%= unexplainedvarience %>
+            </span>
+        </div>
     </div>
-    <div class="box text-align-center balancemovementatbank my-4 bgBlue">End of day balance</div>
-    <!-- <%- include('footer') %> -->
+    <%- include('footer') %>
