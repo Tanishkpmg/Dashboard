@@ -52,7 +52,7 @@ app.post("/profile", up, (req, res, next) => {
   function adjustAccToNumber(num) {
     if (num / 1000000 > 0) {
       num = Math.round(num / 1000000);
-      let a = " Mil";
+      let a = " Mn";
       a = num + a;
       return a;
     }
@@ -294,6 +294,17 @@ app.post("/kpi", uploadFiles, (req, res, next) => {
   });
   next();
 });
+
+
+
+app.get("/addandminus", (req, res) => {
+  res.render("addandminus");
+})
+
+
+
+
+
 app.listen(5000, (err) => {
   console.log(`Your app is running on port 5000`);
 });

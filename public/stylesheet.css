@@ -66,10 +66,15 @@
 
 .balancemovementatbank {
     margin-top: -8px;
-    height: 2rem;
+    height: 2.1rem;
     color: white;
     font-size: large;
 }
+
+/* 
+.nextbtn {
+    height: 30px;
+} */
 
 .boxcd {
     width: 30vw;
@@ -90,6 +95,13 @@
     overflow: scroll;
 }
 
+.value1 {
+    margin-top: 3px;
+    border-radius: 3px;
+    height: 69vh;
+    overflow: scroll;
+}
+
 .margin-top-10 {
     margin-top: 10px;
 }
@@ -106,8 +118,13 @@
     position: absolute;
     left: 42vw;
     height: 25px;
-    bottom: 13px;
+    bottom: 12px;
     /* margin-bottom: 15px; */
+}
+
+.nextbtn a {
+    text-decoration: none;
+    color: white;
 }
 
 /* #bg {

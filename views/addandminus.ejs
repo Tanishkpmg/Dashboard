@@ -1,0 +1,159 @@
+<%- include('header') %>
+    <div id="bg">
+        <div>
+            <h1 class="headingescrow text-align-center grey">ESCROW Account Reconciliation</h1>
+            <div class="bank1">
+                <div class="box text-align-center balancemovementatbank bgBlue">Minimalizing unexplained varience</div>
+                <div class="creditanddebit my-2">
+                    <div class="creditbox">
+                        <div class="boxcd text-align-center bgBlue newid">Credits</div>
+                        <div class="value1">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Particulars</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Unallocated credits</td>
+                                        <td>
+                                            <!-- depositevalue  -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evalue held in archived TEMP accounts</td>
+                                        <td>
+                                            <!--  otherdeposit -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Allocation made on the Mobiquity Platform for migration</td>
+                                        <td>
+                                            <!--  otherdeposit -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Airtel Money to Bank/De-allocation (Pending for Debit in Bank)</td>
+                                        <td>
+                                            <!--  otherdeposit -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Merchant (Pending for Debit in Bank)</td>
+                                        <td>
+                                            <!--  otherdeposit -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Manual De-Allocation (Pending for Debit in Bank)</td>
+                                        <td>
+                                            <!--  otherdeposit -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mobiquity to Bank</td>
+                                        <td>
+                                            <!--  otherdeposit -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bank Sweep Done for Airtime and Key Cost (Pending for Debit in Bank)</td>
+                                        <td>
+                                            <!--  otherdeposit -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Interest received in Bank account</td>
+                                        <td>
+                                            <!--  otherdeposit -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Migrated Subcribers to Mobiquity</td>
+                                        <td>
+                                            <!--  otherdeposit -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="debitbox">
+                        <div class="boxcd text-align-center bgBlue newid">Debits</div>
+                        <div class="value1 height">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Particulars</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Loss due to System error (IT - Issue)</td>
+                                        <td>
+                                            <!-- airtelmoney  -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Prefunded Stock Creation without credit in bank</td>
+                                        <td>
+                                            <!-- deallocation  -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Allocation Done - Fraud / Duplicate</td>
+                                        <td>
+                                            <!-- debitformerchant  -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bank to Mobiquity</td>
+                                        <td>
+                                            <!-- debitformerchant  -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Debit in Bank / de-allocated happened on Mobiquity Platform</td>
+                                        <td>
+                                            <!-- debitformerchant  -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bank to Mobiquity -Duplicate with incorrect reference number</td>
+                                        <td>
+                                            <!-- debitformerchant  -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Recovery amount for double allocation</td>
+                                        <td>
+                                            <!-- debitformerchant  -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bank Charges/WHT</td>
+                                        <td>
+                                            <!-- debitformerchant  -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Correction of the system error on balances (Allocation)</td>
+                                        <td>
+                                            <!-- debitformerchant  -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <button>Loss</button>
+            </div>
+        </div>
+    </div>
+    <%- include('footer') %>
